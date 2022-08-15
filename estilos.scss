@@ -1,4 +1,3 @@
-/* variablers */
 $color-principal: rgba(255, 0, 0, 0.9);
 $color-input: rgb(143, 0, 0);
 $color-bordes: rgba(255, 0, 0, 0.5);
@@ -53,7 +52,6 @@ $bordes-ridge: 2px ridge $color-bordes;
     border-radius: 20px;
 }
 
-/* main */
 .jumbotron{
     margin: 0;
     padding-top: 100px;
@@ -156,6 +154,8 @@ input{
         border:$bordes-ridge;
         box-shadow: 10px 5px 5px $color-sombra-black;
         object-fit: cover;
+        width: 100%;
+        margin-top: 20px;
     }
 }
 textarea{
@@ -181,7 +181,6 @@ textarea{
     width: 100%;
 }
 
-/* footer */
 footer{
     background-color: $color-hover-red;
     color: white;
@@ -225,4 +224,26 @@ footer{
                     transform: rotateX(0);
             opacity: 1;
         }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+    font-size: 16px;
+    height: 100px;
+    text-transform: capitalize;
+    }
+    .multimediaCombis{
+        display: none;
+    }
+}
+@media screen and (max-width: 340px) {
+    .navbar-brand{
+        font-size: 30px;
+    }
+    .destinos h2{
+        font-size: 30px;
+    }
+    input{
+        width: 80%;
+    }
 }
