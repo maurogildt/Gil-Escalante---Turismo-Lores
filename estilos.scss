@@ -51,6 +51,11 @@ $bordes-ridge: 2px ridge $color-bordes;
     background-color: rgba(255, 0, 0, 0.30);
     border-radius: 20px;
 }
+.navbar-collapse{
+    background-color: whitesmoke;
+    border-bottom: $bordes-ridge;
+    border-radius: 0 0 20px 20px;
+}
 
 .jumbotron{
     margin: 0;
