@@ -51,11 +51,6 @@ $bordes-ridge: 2px ridge $color-bordes;
     background-color: rgba(255, 0, 0, 0.30);
     border-radius: 20px;
 }
-.navbar-collapse{
-    background-color: whitesmoke;
-    border-bottom: $bordes-ridge;
-    border-radius: 0 0 20px 20px;
-}
 
 .jumbotron{
     margin: 0;
@@ -87,32 +82,25 @@ $bordes-ridge: 2px ridge $color-bordes;
         animation-name: flip-in-hor-bottom;
         animation-duration: 2s;
     }
-    h3{
-        font-size: 30px;
+    .texto-h2, .texto-h3{
+        color: $color-principal;
+        letter-spacing: 4px;
+    }
+}
+$mapaTextos:(
+    h2: 30px,
+    h3: 28px,
+    h4: 18px,
+);
+@each $tex, $tam in $mapaTextos {
+    .texto-#{$tex} {
+        font-size: $tam;
         text-align: center;
         text-transform: capitalize;
-        color: $color-principal;
         text-shadow: 2px 2px 5px $color-sombra-black;
         animation-name: focus-in;
         animation-duration: 1s;
-        padding-bottom: 10px;
-    }
-    h4{
-        font-size: 28px;
-        padding-top: 20px;
-        text-align: center;
-        text-transform: capitalize;
-        color: $color-principal;
-        text-shadow: 2px 2px 5px $color-sombra-black;
-        animation-name: focus-in;
-        animation-duration: 1.5s;
-    }
-    h5{
-        font-size: 18px;
-        text-align: center;
-        text-transform: capitalize;
-        animation-name: focus-in;
-        animation-duration: 1.5s;
+        font-weight: 600;
     }
 }
 .pasajes, .contacto, .combis{
@@ -232,6 +220,11 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+    .navbar-collapse{
+        background-color: whitesmoke;
+        border-bottom: $bordes-ridge;
+        border-radius: 0 0 20px 20px;
+    }
     footer {
     font-size: 16px;
     height: 100px;
