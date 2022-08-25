@@ -15,6 +15,7 @@ $bordes-ridge: 2px ridge $color-bordes;
     width: 100%;
     background-color: whitesmoke;
     border-bottom:$bordes-ridge;
+    border-radius: 0 0 15px 15px;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.90);
     position: fixed;
     z-index: 1;
@@ -185,8 +186,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding: 5px 20px;
-    border-top:$bordes-ridge;
-    height: 50px;
+    height: 60px;
 }
 .redes{
     display: inline-block;
