@@ -65,8 +65,8 @@ $bordes-ridge: 2px ridge $color-bordes;
 }
 .titulo{
     font-size: 40px;
-    text-transform: capitalize;
     text-align: center;
+    text-transform: capitalize;
     animation-name: focus-in;
     animation-duration: 1.5s;
     margin-bottom: 50px;
@@ -95,13 +95,12 @@ $mapaTextos:(
 );
 @each $tex, $tam in $mapaTextos {
     .texto-#{$tex} {
+        @extend .titulo;
         font-size: $tam;
-        text-align: center;
-        text-transform: capitalize;
         text-shadow: 2px 2px 5px $color-sombra-black;
-        animation-name: focus-in;
-        animation-duration: 1s;
         font-weight: 600;
+        margin-bottom: 20px;
+        letter-spacing: 0px;
     }
 }
 .pasajes, .contacto, .combis{

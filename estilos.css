@@ -61,10 +61,10 @@
   margin-bottom: 70px;
 }
 
-.titulo {
+.titulo, .texto-h4, .texto-h3, .texto-h2 {
   font-size: 40px;
-  text-transform: capitalize;
   text-align: center;
+  text-transform: capitalize;
   animation-name: focus-in;
   animation-duration: 1.5s;
   margin-bottom: 50px;
@@ -88,32 +88,26 @@
 
 .texto-h2 {
   font-size: 30px;
-  text-align: center;
-  text-transform: capitalize;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  animation-name: focus-in;
-  animation-duration: 1s;
   font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0px;
 }
 
 .texto-h3 {
   font-size: 28px;
-  text-align: center;
-  text-transform: capitalize;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  animation-name: focus-in;
-  animation-duration: 1s;
   font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0px;
 }
 
 .texto-h4 {
   font-size: 18px;
-  text-align: center;
-  text-transform: capitalize;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  animation-name: focus-in;
-  animation-duration: 1s;
   font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0px;
 }
 
 .pasajes, .contacto, .combis {
