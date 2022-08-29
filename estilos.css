@@ -1,13 +1,15 @@
+/* variables */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* header */
 .navbar {
   height: 75px;
   width: 100%;
   background-color: whitesmoke;
-  border-bottom: 2px ridge rgba(255, 0, 0, 0.5);
+  border-bottom: 2px ridge #FA9494;
   border-radius: 0 0 15px 15px;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.9);
   position: fixed;
@@ -15,14 +17,14 @@
 }
 
 .navbar-brand {
-  color: rgba(255, 0, 0, 0.9);
+  color: #EB1D36;
   font-size: 35px;
   font-family: "Caveat", cursive;
   font-weight: bold;
   text-transform: capitalize;
 }
 .navbar-brand:hover {
-  color: rgba(255, 0, 0, 0.4);
+  color: #FA9494;
   transition: 0.4s;
 }
 
@@ -39,7 +41,7 @@
 }
 .navbar-nav a:hover {
   color: rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #FA9494;
   border-radius: 20px;
   transition: 0.4s;
 }
@@ -49,6 +51,7 @@
   border-radius: 20px;
 }
 
+/* main */
 .jumbotron {
   margin: 0;
   padding-top: 100px;
@@ -75,14 +78,14 @@
   width: 100%;
   height: 250px;
   border-radius: 20px;
-  border: 2px ridge rgba(255, 0, 0, 0.5);
+  border: 2px ridge #FA9494;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;
   animation-name: flip-in-hor-bottom;
   animation-duration: 2s;
 }
 .destinos .texto-h2, .destinos .texto-h3 {
-  color: rgba(255, 0, 0, 0.9);
+  color: #EB1D36;
   letter-spacing: 4px;
 }
 
@@ -123,16 +126,16 @@
 }
 
 input {
-  border-color: rgba(255, 0, 0, 0.5);
+  float: right;
+  border-color: #FA9494;
   border-radius: 10px;
   padding-left: 10px;
-  text-transform: capitalize;
 }
-input:focus {
-  color: rgb(143, 0, 0);
+input:focus, input:defined {
+  color: #EB1D36;
 }
-input[type=date] {
-  text-transform: lowercase;
+input[type=radio] {
+  float: none;
 }
 input[type=number] {
   width: 50px;
@@ -141,20 +144,20 @@ input[type=number] {
 .btn {
   font-family: "Arima", cursive;
   font-size: 20px;
-  background-color: rgba(255, 0, 0, 0.5);
-  border: 2px ridge rgba(255, 0, 0, 0.5);
+  background-color: #FA9494;
+  border: 2px ridge #FA9494;
   border-radius: 10px;
 }
 .btn:hover {
   color: rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 0, 0, 0.5);
-  border-color: rgba(255, 0, 0, 0.5);
+  background-color: #FA9494;
+  border-color: #FA9494;
   transition: 0.4s;
 }
 
 .multimediaCombis video, .multimediaCombis img {
   border-radius: 20px;
-  border: 2px ridge rgba(255, 0, 0, 0.5);
+  border: 2px ridge #FA9494;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
   object-fit: cover;
   width: 100%;
@@ -163,11 +166,10 @@ input[type=number] {
 
 textarea {
   resize: none;
-  border: 2px ridge rgba(255, 0, 0, 0.5);
+  border: 2px ridge #FA9494;
   border-radius: 10px;
-  color: rgb(143, 0, 0);
+  color: #EB1D36;
   padding-left: 10px;
-  text-transform: capitalize;
   height: 200px;
   width: 100%;
 }
@@ -185,9 +187,10 @@ textarea {
   width: 100%;
 }
 
+/* footer */
 footer {
-  background-color: rgba(255, 0, 0, 0.4);
-  color: white;
+  background-color: #FA9494;
+  color: #F5EDDC;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   text-align: center;
   font-size: 30px;
@@ -205,6 +208,7 @@ footer {
   margin: 10px 20px auto 0;
 }
 
+/* animaciones */
 @keyframes focus-in {
   0% {
     -webkit-filter: blur(5px);
@@ -229,10 +233,11 @@ footer {
     opacity: 1;
   }
 }
+/* media querys */
 @media screen and (max-width: 768px) {
   .navbar-collapse {
     background-color: whitesmoke;
-    border-bottom: 2px ridge rgba(255, 0, 0, 0.5);
+    border-bottom: 2px ridge #FA9494;
     border-radius: 0 0 20px 20px;
   }
   footer {
