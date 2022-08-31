@@ -172,6 +172,13 @@ textarea{
 .formTam-contacto{
     width: 100%;
 }
+.ubicacion{
+    border: $bordes-ridge;
+    border-radius: 20px;
+    height: 50%;
+    width: 100%;
+    box-shadow: 10px 5px 5px $color-sombra-black;
+}
 /* footer */
 footer{
     background-color: $color-bordes;
@@ -232,7 +239,7 @@ footer{
     text-transform: capitalize;
     flex-wrap: wrap;
     }
-    .multimediaCombis{
+    .multimediaCombis, .ubicacion{
         display: none;
     }
 }
