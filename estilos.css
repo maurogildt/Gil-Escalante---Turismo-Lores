@@ -207,6 +207,9 @@ footer {
   list-style: none;
   margin: 10px 20px auto 0;
 }
+.redes a {
+  color: #F5EDDC;
+}
 
 /* animaciones */
 @keyframes focus-in {
@@ -244,6 +247,7 @@ footer {
     font-size: 16px;
     height: 100px;
     text-transform: capitalize;
+    flex-wrap: wrap;
   }
   .multimediaCombis {
     display: none;
