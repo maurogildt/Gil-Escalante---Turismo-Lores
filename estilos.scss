@@ -58,7 +58,7 @@ $bordes-ridge: 2px ridge $color-bordes;
     padding-top: 100px;
     border-radius: 0;
     position: static;
-    z-index: 3;
+    z-index: 2;
 }
 .container{
     margin-bottom: 70px;
@@ -87,6 +87,27 @@ $bordes-ridge: 2px ridge $color-bordes;
         color: $color-principal;
         letter-spacing: 4px;
     }
+}
+.capa{
+    position: absolute;
+    color: #EB1D36;
+    top: 0px;
+    padding-left: 15px;
+    opacity: 0;
+    background-color: #fa949449;
+    border-radius: 20px;
+    height: 250px;
+    width: 350px;
+}
+.capa:hover{
+    opacity: 1;
+}
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(1.6);
 }
 $mapaTextos:(
     h2: 30px,

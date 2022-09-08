@@ -57,7 +57,7 @@
   padding-top: 100px;
   border-radius: 0;
   position: static;
-  z-index: 3;
+  z-index: 2;
 }
 
 .container {
@@ -87,6 +87,31 @@
 .destinos .texto-h2, .destinos .texto-h3 {
   color: #EB1D36;
   letter-spacing: 4px;
+}
+
+.capa {
+  position: absolute;
+  color: #EB1D36;
+  top: 0px;
+  padding-left: 15px;
+  opacity: 0;
+  background-color: rgba(250, 148, 148, 0.2862745098);
+  border-radius: 20px;
+  height: 250px;
+  width: 350px;
+}
+
+.capa:hover {
+  opacity: 1;
+}
+
+.zoom {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.6);
 }
 
 .texto-h2 {
