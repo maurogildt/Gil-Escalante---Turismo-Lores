@@ -84,6 +84,10 @@
   animation-name: flip-in-hor-bottom;
   animation-duration: 2s;
 }
+.destinos img:hover {
+  animation-name: estiramiento;
+  animation-duration: 1.5s;
+}
 .destinos .texto-h2, .destinos .texto-h3 {
   color: #EB1D36;
   letter-spacing: 4px;
@@ -242,6 +246,32 @@ footer {
     -webkit-transform: rotateX(0);
     transform: rotateX(0);
     opacity: 1;
+  }
+}
+@keyframes estiramiento {
+  0% {
+    -webkit-transform: skew(0deg 0deg);
+    transform: skew(0deg 0deg);
+  }
+  20% {
+    -webkit-transform: skew(-5deg, -5deg);
+    transform: skew(-5deg, -5deg);
+  }
+  40% {
+    -webkit-transform: skew(10deg, 10deg);
+    transform: skew(10deg, 10deg);
+  }
+  65% {
+    -webkit-transform: skew(-5deg, -5deg);
+    transform: skew(-5deg, -5deg);
+  }
+  75% {
+    -webkit-transform: skew(5deg, 5deg);
+    transform: skew(5deg, 5deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg 0deg);
+    transform: skew(0deg 0deg);
   }
 }
 /* media querys */

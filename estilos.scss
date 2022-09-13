@@ -82,6 +82,10 @@ $bordes-ridge: 2px ridge $color-bordes;
         margin-bottom: 20px;
         animation-name: flip-in-hor-bottom;
         animation-duration: 2s;
+        &:hover{
+            animation-name: estiramiento;
+            animation-duration: 1.5s;
+        }
     }
     .texto-h2, .texto-h3{
         color: $color-principal;
@@ -225,6 +229,32 @@ footer{
                     transform: rotateX(0);
             opacity: 1;
         }
+}
+@keyframes estiramiento {
+    0% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+    }
+    20% {
+    -webkit-transform: skew(-5deg, -5deg);
+            transform: skew(-5deg, -5deg);
+    }
+    40% {
+    -webkit-transform: skew(10deg, 10deg);
+            transform: skew(10deg, 10deg);
+    }
+    65% {
+    -webkit-transform: skew(-5deg, -5deg);
+            transform: skew(-5deg, -5deg);
+    }
+    75% {
+    -webkit-transform: skew(5deg, 5deg);
+            transform: skew(5deg, 5deg);
+    }
+    100% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+    }
 }
 /* media querys */
 @media screen and (max-width: 768px) {
