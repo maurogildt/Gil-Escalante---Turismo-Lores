@@ -159,7 +159,7 @@ input[type=number] {
   transition: 0.4s;
 }
 
-.multimediaCombis video, .multimediaCombis img {
+.multimediaCombis video, .multimediaCombis .carousel-inner {
   border-radius: 20px;
   border: 2px ridge #FA9494;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
