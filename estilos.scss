@@ -257,11 +257,20 @@ footer{
     }
 }
 /* media querys */
+@media screen and (max-width: 1024px) {
+    .texto-h2{
+        white-space: nowrap;
+        font-size: 23px;
+    }
+}
 @media screen and (max-width: 768px) {
     .navbar-collapse{
         background-color: whitesmoke;
         border-bottom: $bordes-ridge;
         border-radius: 0 0 20px 20px;
+    }
+    .texto-h2{
+        font-size: 30px;
     }
     footer {
     font-size: 16px;
@@ -275,9 +284,6 @@ footer{
 }
 @media screen and (max-width: 340px) {
     .navbar-brand{
-        font-size: 30px;
-    }
-    .destinos h2{
         font-size: 30px;
     }
     input{
